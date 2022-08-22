@@ -3,6 +3,7 @@
 }
 
 body {
+    font-family: sans-serif;
     padding: 0;
     margin: 0;
 }
@@ -15,26 +16,37 @@ header {
 .container {
     background-color: ghostwhite;
     text-align: center;
-    font-size: 20px;
-    color: white;
+    font-size: 25px;
+    color: orange;
+    text-shadow: 5px 5px black;
+    bottom: 0;
+}
+
+.container img {
+    filter: blur(0.5px);
 }
 
 .jumbotron {
     width: 100%;
-    max-height: 500px;
+    max-height: 400px;
     object-fit: cover;
+    
 }
 
 .title {
-    /* position: absolute; */
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     
 }
 
 nav {
-    background-color: gainsboro;
+    background-color: orange;
     padding: 5px;
     position: sticky;
     top: 0;
+    text-align: center;
 }
 
 nav li {
@@ -47,15 +59,38 @@ nav a {
     font-size: 18px;
     font-weight: 400px;
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
-/* .title {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    font-size: large; */
-/* } */
+nav a:hover {
+    font-weight: bold;
+}
 
     /* main */
+main {
+    padding: 20px;
+    overflow: auto;
+}
+
+#content {
+    float: left;
+    width: 75%;
+}
+
+.menuImage {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+}
+
+article h2 {
+    color: orange;
+}
