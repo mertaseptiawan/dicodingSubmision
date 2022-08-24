@@ -14,11 +14,19 @@ header {
 }
 
 .container {
-    background-color: ghostwhite;
+    /* background-color: ghostwhite; */
+    background-image: url(image/jumbotron.jpg);
+    height: 300px;
+    width: 100%;
     text-align: center;
     color: orange;
     text-shadow: 5px 5px black;
-    bottom: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container img {
@@ -32,10 +40,6 @@ header {
 }
 
 .title {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     font-size: 25px;
     width: 100%;
 }
@@ -87,7 +91,7 @@ main {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     padding: 20px;
-    margin: 20px;
+    margin: 10px;
 }
 
 article h2 {
@@ -106,15 +110,17 @@ main a {
 aside {
     float: right;
     width: 25%;
+    text-align: center;
 }
+
+.profile img {
+    width: 150px;
+}
+
 
 @media screen and (max-width: 1023px) {
     .title {
-        position: absolute;
-        top: 35%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: medium;
+        font-size: 15px;
         width: 100%;
     }
 }
@@ -128,12 +134,74 @@ aside {
 }
 
 @media screen and (max-width: 639px) {
+    .container {
+        background-image: url(image/jumbotron.jpg);
+        height: 200px;
+        width: 100%;
+        text-align: center;
+        color: orange;
+        text-shadow: 5px 5px black;
+        background-repeat: no-repeat;
+        background-size: cover;
+        object-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .title {
-        position: absolute;
-        top: 25%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: small;
+        font-size: 10px;
         width: 100%;
     }
+
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .card h1, h2 {
+        font-size: large;
+    }
+
+    nav {
+        background-color: orange;
+        padding: 2px;
+        position: sticky;
+        top: 0;
+        text-align: center;
+    }
+}
+
+    /* menu */
+#content-menu {
+    float: left;
+    width: 75%;
+}
+
+#content-menu .card {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.food h1, .dessert h1, .beverage h1 {
+    text-align: center;
+}
+
+.food h2, .dessert h2, .beverage h2 {
+    color: orange;
+}
+
+.food, .dessert {
+    padding: 30px;
+}
+
+.food li, .dessert li, .beverage li {
+    display: inline;
+    list-style-type: none;
+}
+
+.price {
+    float: right;
 }
