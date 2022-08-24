@@ -94,6 +94,14 @@ article h2 {
     color: orange;
 }
 
+article p, span {
+    color: black;
+}
+
+main a {
+    text-decoration: none;
+}
+
     /* aside */
 aside {
     float: right;
