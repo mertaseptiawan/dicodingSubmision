@@ -16,7 +16,6 @@ header {
 .container {
     background-color: ghostwhite;
     text-align: center;
-    font-size: 25px;
     color: orange;
     text-shadow: 5px 5px black;
     bottom: 0;
@@ -30,7 +29,6 @@ header {
     width: 100%;
     max-height: 400px;
     object-fit: cover;
-    
 }
 
 .title {
@@ -38,7 +36,8 @@ header {
     top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
+    font-size: 25px;
+    width: 100%;
 }
 
 nav {
@@ -93,4 +92,40 @@ main {
 
 article h2 {
     color: orange;
+}
+
+    /* aside */
+aside {
+    float: right;
+    width: 25%;
+}
+
+@media screen and (max-width: 1023px) {
+    .title {
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: medium;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #content,
+    aside {
+        width: 100% !important;
+        padding: 0 !important;
+    }
+}
+
+@media screen and (max-width: 639px) {
+    .title {
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: small;
+        width: 100%;
+    }
 }
