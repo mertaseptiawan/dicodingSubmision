@@ -111,12 +111,65 @@ aside {
     float: right;
     width: 25%;
     text-align: center;
+    font-size: small;
 }
 
 .profile img {
     width: 150px;
 }
 
+footer {
+    background-color: orange;
+    height: fit-content;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    padding-top: 5px;
+    padding-left: 35%;
+    padding-right: 35%;
+    
+}
+    /* menu */
+#content-menu {
+    float: left;
+    width: 75%;
+}
+
+#content-menu .card {
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: #d2d6d3;
+}
+
+.food h1, .dessert h1, .beverage h1 {
+    text-align: center;
+}
+
+.food h2, .dessert h2, .beverage h2 {
+    color: orange;
+}
+
+.food, .dessert {
+    padding: 30px;
+}
+
+.food li, .dessert li, .beverage li {
+    display: inline;
+    list-style-type: none;
+}
+
+.price {
+    float: right;
+}
+
+    /* location */
+.location {
+    padding: 50px;
+}
+
+.title-location {
+    color: orange;
+    text-shadow: 2px 2px black;
+}
 
 @media screen and (max-width: 1023px) {
     .title {
@@ -126,7 +179,7 @@ aside {
 }
 
 @media screen and (max-width: 767px) {
-    #content,
+    #content, #content-menu,
     aside {
         width: 100% !important;
         padding: 0 !important;
@@ -172,36 +225,13 @@ aside {
         top: 0;
         text-align: center;
     }
-}
 
-    /* menu */
-#content-menu {
-    float: left;
-    width: 75%;
-}
+    #content-menu .card {
+        font-size: x-small;
+        padding: 10px;
+    }
 
-#content-menu .card {
-    padding-left: 100px;
-    padding-right: 100px;
-}
-
-.food h1, .dessert h1, .beverage h1 {
-    text-align: center;
-}
-
-.food h2, .dessert h2, .beverage h2 {
-    color: orange;
-}
-
-.food, .dessert {
-    padding: 30px;
-}
-
-.food li, .dessert li, .beverage li {
-    display: inline;
-    list-style-type: none;
-}
-
-.price {
-    float: right;
+    .location {
+        padding: 10px;
+    }
 }
