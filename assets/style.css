@@ -14,7 +14,6 @@ header {
 }
 
 .container {
-    /* background-color: ghostwhite; */
     background-image: url(image/jumbotron.jpg);
     height: 300px;
     width: 100%;
@@ -126,8 +125,16 @@ footer {
     padding-top: 5px;
     padding-left: 35%;
     padding-right: 35%;
-    
 }
+
+.menuImage:hover {
+    width: 105%;
+    max-height: 400px;
+    transition: 0.3s;
+    object-position: center;
+}
+
+
     /* menu */
 #content-menu {
     float: left;
@@ -161,6 +168,10 @@ footer {
     float: right;
 }
 
+.make {
+    color: orange;
+}
+
     /* location */
 .location {
     padding: 50px;
@@ -169,6 +180,12 @@ footer {
 .title-location {
     color: orange;
     text-shadow: 2px 2px black;
+}
+
+    /* makePizza */
+.content-make {
+    padding: 20px;
+    text-align: center;
 }
 
 @media screen and (max-width: 1023px) {
