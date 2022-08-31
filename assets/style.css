@@ -266,4 +266,10 @@ footer {
     .location {
         padding: 10px;
     }
+
+    .pizza-box img {
+        width: 100px;
+        height: 75px;
+        margin: 10px;
+    }
 }
