@@ -125,6 +125,7 @@ footer {
     padding-top: 5px;
     padding-left: 35%;
     padding-right: 35%;
+    padding-bottom: 0;
 }
 
 .menuImage:hover {
@@ -187,6 +188,20 @@ footer {
     padding: 20px;
     text-align: center;
 }
+
+.pizza-container {
+    display: flex;
+    justify-content: center;
+}
+
+.pizza-box img {
+    width: 200px;
+    height: 150px;
+    margin: 20px;
+}
+
+
+    /* media query */
 
 @media screen and (max-width: 1023px) {
     .title {
